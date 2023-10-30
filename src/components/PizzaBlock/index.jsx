@@ -1,6 +1,6 @@
 import React from "react";
 
-function PizzaBlock({ title, price, imageUrl, sizes, types }) {
+function PizzaBlock({ name, price, imageUrl, sizes, types }) {
   const typeName = ['тонкое', 'традиционное']
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
@@ -15,7 +15,7 @@ function PizzaBlock({ title, price, imageUrl, sizes, types }) {
         alt="Pizza"
       />
       <h4 className="pizza-block__title">
-        {title}
+        {name}
       </h4>
       <div className="pizza-block__selector">
         <ul>

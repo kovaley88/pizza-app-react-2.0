@@ -1,11 +1,11 @@
 import './App.css';
 import './scss/app.scss';
+import React from 'react';
 import Header from "./components/Header"
 import Categories from "./components/Categories"
 import Sort from "./components/Sort"
 import PizzaBlock from './components/PizzaBlock';
-import React from 'react';
-// import pizzas from './assets/pizzas.json'
+import Skeleton from './components/PizzaBlock/Skeleton';
 
 
 function App() {
@@ -21,7 +21,6 @@ function App() {
       })
   }, [])
 
-  console.log(items)
 
   return (
     <div className="wrapper">
@@ -35,7 +34,7 @@ function App() {
           <h2 className="content__title">Все пиццы</h2>
           <div className="content__items">
             {
-              items.map((obj) => (<PizzaBlock key={obj.id} {...obj} />))
+              items.map((obj) => (<Skeleton key={obj.id} {...obj} />))
             }
 
           </div>
