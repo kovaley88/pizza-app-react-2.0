@@ -8,7 +8,7 @@ const Skeleton = () => (
         height={480}
         viewBox="0 0 273 480"
         backgroundColor="#fafafa"
-        foregroundColor="#f0ebeb"
+        foregroundColor="#f7f3f3"
     >
         <circle cx="125" cy="121" r="118" />
         <rect x="0" y="310" rx="10" ry="10" width="254" height="77" />
