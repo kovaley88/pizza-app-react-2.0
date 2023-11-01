@@ -3,6 +3,8 @@ import EmptyCart from '../assets/img/empty-cart.png'
 
 
 
+
+
 function Cart() {
     return (
         <div>
