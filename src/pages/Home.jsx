@@ -26,10 +26,6 @@ function Home() {
         dispatch(setCategoryId(idx))
     }, []);
 
-    // const onChangeCategory = (id) => {
-    //     dispatch(setCategoryId(id))
-    // };
-
     const onChangePage = (page) => {
         dispatch(setCurrentPage(page));
     }
@@ -98,19 +94,6 @@ function Home() {
         }
         isSearch.current = false;
     }, [categoryId, sort.sortProperty, searchValue, currentPage])
-
-
-
-
-    // Вариант поиска пицц подходит для небольшого количества 
-    // const pizzas = items.filter((obj) => {
-    //     if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
-    //         return true;
-    //     }
-    //     return false;
-    // })
-    //     .map((obj) => <PizzaBlock key={obj.id} {...obj} />);
-
 
     const skeletons = [... new Array(6)].map((_, index) => <Skeleton key={index} />)
 
